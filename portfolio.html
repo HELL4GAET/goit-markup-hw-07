@@ -25,12 +25,14 @@
           >
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__current" href="./index.html"
-                >Студия</a
-              >
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              <a
+                class="site-nav__link site-nav__current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
@@ -64,21 +66,34 @@
       <section class="section filter">
         <div class="container">
           <h1 hidden>Навигация</h1>
-          <ul class="filter-btn">
-            <li class="btn">
-              <button type="button" class="current">Все</button>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button
+                type="button"
+                class="filter__button filter__button--current"
+              >
+                Все
+              </button>
             </li>
-            <li class="btn"><button type="button">Веб-сайты</button></li>
-            <li class="btn"><button type="button">Приложения</button></li>
-            <li class="btn"><button type="button">Дизайн</button></li>
-            <li class="btn"><button type="button">Маркетинг</button></li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
+            </li>
+            <li class="filter__item" class="filter__button">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
           </ul>
 
-          <ul class="filter-nav">
-            <li class="nav-img">
+          <ul class="nav__list">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img
                       src="./images/notebook.jpg"
                       alt="notebook"
@@ -86,8 +101,8 @@
                     />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -95,17 +110,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Технокряк</h2>
-                  <p class="header paragrpaph">Веб-сайт</p>
+                <div class="card__content">
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__label">Веб-сайт</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img
                       src="./images/players.jpg"
                       alt="notebook"
@@ -113,8 +128,8 @@
                     />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -122,17 +137,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Постер New Orlean vs Golden Star</h2>
-                  <p class="header paragrpaph">Дизайн</p>
+                <div class="card__content">
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__label">Дизайн</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img
                       src="./images/seafood.jpg"
                       alt="notebook"
@@ -140,8 +155,8 @@
                     />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -149,17 +164,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Ресторан Seafood</h2>
-                  <p class="header paragrpaph">Приложение</p>
+                <div class="card__content">
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__label">Приложение</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img
                       src="./images/headphones.png"
                       alt="notebook"
@@ -167,8 +182,8 @@
                     />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -176,22 +191,22 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Проект Prime</h2>
-                  <p class="header paragrpaph">Маркетинг</p>
+                <div class="card__content">
+                  <h2 class="card__title">Проект Prime</h2>
+                  <p class="card__label">Маркетинг</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img src="./images/boxes.jpg" alt="notebook" width="370" />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -199,17 +214,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Проект Boxes</h2>
-                  <p class="header paragrpaph">Приложение</p>
+                <div class="card__content">
+                  <h2 class="card__title">Проект Boxes</h2>
+                  <p class="card__label">Приложение</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img
                       src="./images/inspiration.jpg"
                       alt="notebook"
@@ -217,8 +232,8 @@
                     />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -226,17 +241,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Inspiration has no Borders</h2>
-                  <p class="header paragrpaph">Веб-сайт</p>
+                <div class="card__content">
+                  <h2 class="card__title">Inspiration has no Borders</h2>
+                  <p class="card__label">Веб-сайт</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img
                       src="./images/limited.jpg"
                       alt="notebook"
@@ -244,8 +259,8 @@
                     />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -253,22 +268,22 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Издание Limited Edition</h2>
-                  <p class="header paragrpaph">Дизайн</p>
+                <div class="card__content">
+                  <h2 class="card__title">Издание Limited Edition</h2>
+                  <p class="card__label">Дизайн</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img src="./images/lab.jpg" alt="notebook" width="370" />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -276,17 +291,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Проект LAB</h2>
-                  <p class="header paragrpaph">Маркетинг</p>
+                <div class="card__content">
+                  <h2 class="card__title">Проект LAB</h2>
+                  <p class="card__label">Маркетинг</p>
                 </div>
               </article>
             </li>
 
-            <li class="nav-img">
+            <li class="nav__item">
               <article class="card">
                 <div class="overlay-system">
-                  <div class="card-thumb">
+                  <div class="card__thumb">
                     <img
                       src="./images/business.jpg"
                       alt="notebook"
@@ -294,8 +309,8 @@
                     />
                   </div>
 
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -303,9 +318,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-content">
-                  <h2 class="header">Growing Business</h2>
-                  <p class="header paragrpaph">Приложение</p>
+                <div class="card__content">
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__label">Приложение</p>
                 </div>
               </article>
             </li>
