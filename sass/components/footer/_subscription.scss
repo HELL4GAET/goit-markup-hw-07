@@ -46,12 +46,14 @@
     margin: 0;
     align-items: center;
     justify-content: center;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
 
-.subscription__btn:hover,
-.subscription__btn:focus {
-    background-color: #188ce8;
-}
+
 
 
 
@@ -70,16 +72,18 @@
     margin-right: 12px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: $background-color;
+
+    &:hover,
+    &:focus {
+        border: 1px solid #188ce8;
+    }
+
+    &:focus {
+        outline: 1px solid #188ce8;
+    }
 }
 
-.subscription__label:hover,
-.subscription__label:focus {
-    border: 1px solid #188ce8;
-}
 
-.subscription__label:focus {
-    outline: 1px solid #188ce8;
-}
 
 .subscription__icon {
     position: absolute;

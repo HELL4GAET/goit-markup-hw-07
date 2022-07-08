@@ -43,6 +43,10 @@
     border-radius: 2px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 7px;
+
+    .policy:hover & {
+        border-color: $accent-color;
+    }
 }
 
 .checkbox:checked+.icon-checkbox {
@@ -60,9 +64,7 @@
     justify-content: center;
 }
 
-.policy:hover .icon-checkbox {
-    border-color: $accent-color;
-}
+
 
 .mail-form:focus {
     outline: 1px solid $accent-color;

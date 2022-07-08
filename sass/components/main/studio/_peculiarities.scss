@@ -10,11 +10,12 @@
 
 .peculiarities__item {
     margin-right: 30px;
+
+    &:last-child {
+        margin: 0;
+    }
 }
 
-.peculiarities__item:last-child {
-    margin: 0;
-}
 
 .peculiarities__icon {
     display: flex;

@@ -13,17 +13,14 @@
     align-items: center;
     justify-content: center;
     width: 170px;
+
+    &:last-child {
+        margin: 0;
+    }
 }
 
-.clients__item:last-child {
-    margin: 0;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-    color: $accent-color;
-    border: 1px solid $accent-color;
-}
+
 
 .clients__link {
     display: flex;
@@ -38,4 +35,10 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: currentColor;
+
+    &:hover, 
+    &:focus {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
 }

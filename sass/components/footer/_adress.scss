@@ -12,11 +12,13 @@
 
 .footer-contact__item {
     margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.footer-contact__item:last-child {
-    margin-bottom: 0;
-}
+
 
 .footer-contact__connection {
     font-family: Roboto, sans-serif;
@@ -26,9 +28,10 @@
     text-decoration: none;
     font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
 }
 
-.footer-contact__connection:hover,
-.footer-contact__connection:focus {
-    color: $accent-color;
-}
