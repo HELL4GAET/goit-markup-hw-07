@@ -873,9 +873,9 @@ img {
   visibility: visible;
 }
 
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
-}
+} */
 
 .modal {
   display: flex;
